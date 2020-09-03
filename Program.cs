@@ -38,8 +38,8 @@ namespace ShootingDice
             Console.WriteLine("-------------------");
 
             Player Human = new HumanPlayer();
-            OneHigher.Name = "Helna";
-            OneHigher.Play(player3);
+            Human.Name = "Helna";
+            Human.Play(player3);
 
             Console.WriteLine("-------------------");
 
