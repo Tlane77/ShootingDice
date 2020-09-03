@@ -37,6 +37,36 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
+            Player Human = new HumanPlayer();
+            OneHigher.Name = "Helna";
+            OneHigher.Play(player3);
+
+            Console.WriteLine("-------------------");
+
+            Player CreativeSmack = new CreativeSmackTalkingPlayer();
+            CreativeSmack.Name = "Fred";
+            CreativeSmack.Play(player1);
+
+            Console.WriteLine("-------------------");
+
+            Player SoreLoser = new SoreLoserPlayer();
+            SoreLoser.Name = "Dafney";
+            SoreLoser.Play(player1);
+
+            Console.WriteLine("-------------------");
+
+            Player UpperHalf = new UpperHalfPlayer();
+            UpperHalf.Name = "Shaggy";
+            UpperHalf.Play(player1);
+
+            Console.WriteLine("-------------------");
+
+            Player SoreUpperHalf = new SoreLoserUpperHalfPlayer();
+            SoreUpperHalf.Name = "Scooby";
+            SoreUpperHalf.Play(player1);
+
+            Console.WriteLine("-------------------");
+
             Player large = new LargeDicePlayer();
             large.Name = "Bigun Rollsalot";
 
