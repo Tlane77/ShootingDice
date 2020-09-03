@@ -79,6 +79,13 @@ namespace ShootingDice
                 player1,
                 player2,
                 player3,
+                SmackTalk,
+                OneHigher,
+                Human,
+                CreativeSmack,
+                SoreLoser,
+                UpperHalf,
+                SoreUpperHalf,
                 large
             };
 

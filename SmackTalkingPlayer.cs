@@ -17,7 +17,7 @@ namespace ShootingDice
             int myRoll = Roll();
             int otherRoll = other.Roll();
 
-            Console.WriteLine($"{Name} rolls a {myRoll}");
+            Console.WriteLine($"{Name} rolls a {myRoll} Take that ScoobySnack!");
             Console.WriteLine($"{other.Name} rolls a {otherRoll}");
             if (myRoll > otherRoll)
             {
