@@ -7,18 +7,16 @@ namespace ShootingDice
     // A Player whose role will always be in the upper half of their possible rolls
     public class UpperHalfPlayer : Player
     {
-        public override int Roll()
-        {
-            // Return a random number between 7 & 12? and DiceSize
-            return new Random().Next(4, DiceSize) + 1;
-        }
+        public override int Roll =>
+            // Return a random number between 4 & 6? and DiceSize
+            new Random().Next(4, DiceSize) + 1;
 
         public override void Play(Player other)
         {
             // Call roll for "this" object and for the "other" object
 
-            int myRoll = Roll();
-            int otherRoll = other.Roll();
+            int myRoll = Roll;
+            int otherRoll = other.Roll;
 
             Console.WriteLine($"{Name} rolls a {myRoll}");
             Console.WriteLine($"{other.Name} rolls a {otherRoll}");

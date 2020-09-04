@@ -74,6 +74,15 @@ namespace ShootingDice
             SoreUpperHalf.Name = "Scooby";
             SoreUpperHalf.Play(player1);
 
+            try
+            {
+                player1.Play(player2);
+            }
+            catch
+            {
+                Console.WriteLine("Players will be Players!");
+            }
+
             Console.WriteLine("-------------------");
 
             Player large = new LargeDicePlayer();

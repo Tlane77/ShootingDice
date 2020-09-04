@@ -22,8 +22,8 @@ namespace ShootingDice
             int NewSmackTalk = new Random().Next(0, CreativeSmack.Count);
 
             // Call roll for "this" object and for the "other" object
-            int myRoll = Roll();
-            int otherRoll = other.Roll();
+            int myRoll = Roll;
+            int otherRoll = other.Roll;
 
             Console.WriteLine($"{Name} rolls a {myRoll}");
             Console.WriteLine($"{other.Name} rolls a {otherRoll}");
