@@ -53,6 +53,15 @@ namespace ShootingDice
             SoreLoser.Name = "Dafney";
             SoreLoser.Play(player1);
 
+            try
+            {
+                player1.Play(player2);
+            }
+            catch
+            {
+                Console.WriteLine("Players will be Players!");
+            }
+
             Console.WriteLine("-------------------");
 
             Player UpperHalf = new UpperHalfPlayer();
@@ -119,6 +128,15 @@ namespace ShootingDice
                 Player player1 = shuffledPlayers[i];
                 Player player2 = shuffledPlayers[i + 1];
                 player1.Play(player2);
+
+                try
+                {
+                    player1.Play(player2);
+                }
+                catch
+                {
+                    Console.WriteLine("Players will be Players!");
+                }
             }
         }
     }

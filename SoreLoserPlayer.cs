@@ -22,7 +22,7 @@ namespace ShootingDice
             }
             else if (myRoll < otherRoll)
             {
-                Console.WriteLine($"{other.Name} Wins!");
+                throw new Exception($"{other.Name}yells, welcome to Loserville!");
             }
             else
             {
